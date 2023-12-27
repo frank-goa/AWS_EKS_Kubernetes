@@ -59,6 +59,8 @@ eksctl create nodegroup --cluster=eksdemo1 \
     --appmesh-access \
     --alb-ingress-access 
 ```
+### Try to add Security Group to this command
+--node-security-groups strings 
 
 ### Verify Cluster, NodeGroup in EKS Management Console
 - Go to Services -> Elastic Kubernetes Service -> eksdemo1
@@ -91,3 +93,6 @@ kubectl config view --minify
 
 ### Login to Worker Node using Keypai kube-demo
 - Login to worker node
+- ssh -i kube-demo.pem ec2-user@<Public-IP-of-Worker-Node>
+- df -h = disk space of node
+
