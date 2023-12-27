@@ -77,3 +77,17 @@ kubectl get nodes -o wide
 # Our kubectl context should be automatically changed to new cluster
 kubectl config view --minify
 ```
+### Verify Worker Node IAM Role and list of Policies
+- Go to Services -> EC2 -> Worker Nodes
+- Click on **IAM Role associated to EC2 Worker Nodes**
+
+### Verify Security Group Associated to Worker Nodes
+- Go to Services -> EC2 -> Worker Nodes
+- Click on **Security Group** associated to EC2 Instance which contains `remote` in the name.
+
+### Verify CloudFormation Stacks
+- Verify Control Plane Stack & Events
+- Verify NodeGroup Stack & Events
+
+### Login to Worker Node using Keypai kube-demo
+- Login to worker node
